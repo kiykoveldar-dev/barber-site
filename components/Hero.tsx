@@ -3,7 +3,7 @@ import {
   Camera,
   Phone,
   Send,
-  MessageCircle
+  MessageCircle,
 } from "lucide-react";
 import { content } from "@/data/content";
 
@@ -26,15 +26,15 @@ export default function Hero() {
         width={220}
         height={220}
         priority
-        className="mx-auto rounded-full object-cover shadow-2xl"
+        className="mx-auto h-[220px] w-[220px] rounded-full object-cover shadow-2xl"
       />
 
       <h1 className="mt-8 text-4xl font-bold tracking-tight text-black sm:text-5xl">
         {content.name}
       </h1>
 
-      <p className="mt-3 БАРБЕР / МУЖСКИЕ СТРИЖКИ / ОФОРМЛЕНИЕ БОРОДЫtext-lg text-neutral-700">
-        
+      <p className="mt-3 text-lg font-medium uppercase tracking-wide text-neutral-800">
+        Барбер / мужские стрижки / оформление бороды
       </p>
 
       <p className="mx-auto mt-5 max-w-xl text-neutral-600">
@@ -49,13 +49,9 @@ export default function Hero() {
             target={label === "Позвонить" ? undefined : "_blank"}
             rel="noopener noreferrer"
             aria-label={label}
-           bg-black
-text-white
+            className="flex h-14 w-14 items-center justify-center rounded-full bg-black text-white shadow-lg transition hover:scale-105 hover:bg-[#123624]"
           >
-           <Icon
-  size={30}
-  className="text-black"
-/>
+            <Icon size={28} strokeWidth={2.5} />
           </a>
         ))}
       </div>
