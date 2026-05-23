@@ -8,21 +8,19 @@ import { content } from "@/data/content";
 export default function Gallery() {
   const [active, setActive] = useState<string | null>(null);
 
-  const images = content.gallery || [];
-
   return (
-    <section className="px-5 py-20 bg-transparent">
+    <section className="bg-black px-5 py-20 text-white">
       <div className="mx-auto max-w-6xl">
-        <h2 className="text-center text-3xl font-bold text-black">
+        <h2 className="text-center text-4xl font-bold">
           Работы
         </h2>
 
         <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {images.map((img, i) => (
+          {content.gallery.map((img, i) => (
             <button
               key={img}
               onClick={() => setActive(img)}
-              className="overflow-hidden rounded-3xl shadow"
+              className="overflow-hidden rounded-3xl bg-neutral-900 shadow-lg"
             >
               <Image
                 src={img}
@@ -30,7 +28,7 @@ export default function Gallery() {
                 width={800}
                 height={1000}
                 loading="lazy"
-                className="h-[420px] w-full object-cover transition hover:scale-105"
+                className="h-[420px] w-full object-cover transition duration-300 hover:scale-105"
               />
             </button>
           ))}
@@ -40,11 +38,12 @@ export default function Gallery() {
       {active && (
         <div
           onClick={() => setActive(null)}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-5"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-5"
         >
           <button
             onClick={() => setActive(null)}
             className="absolute right-5 top-5 rounded-full bg-white p-3 text-black"
+            aria-label="Закрыть фото"
           >
             <X />
           </button>

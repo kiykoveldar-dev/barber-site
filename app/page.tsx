@@ -6,25 +6,21 @@ import Gallery from "@/components/Gallery";
 import Footer from "@/components/Footer";
 
 export default function Home() {
+  return (
+    <main className="min-h-screen bg-black text-white">
 
-return(
+      <Hero />
 
-<main>
+      <Booking />
 
-<Hero/>
+      <Reviews />
 
-<Booking/>
+      <Socials />
 
-<Reviews/>
+      <Gallery />
 
-<Socials/>
+      <Footer />
 
-<Gallery/>
-
-<Footer/>
-
-</main>
-
-)
-
+    </main>
+  );
 }
