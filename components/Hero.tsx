@@ -33,8 +33,8 @@ export default function Hero() {
         {content.name}
       </h1>
 
-      <p className="mt-3 text-lg text-neutral-700">
-        Барбер / мужские стрижки / оформление бороды
+      <p className="mt-3 БАРБЕР / МУЖСКИЕ СТРИЖКИ / ОФОРМЛЕНИЕ БОРОДЫtext-lg text-neutral-700">
+        
       </p>
 
       <p className="mx-auto mt-5 max-w-xl text-neutral-600">
