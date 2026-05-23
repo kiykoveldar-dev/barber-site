@@ -14,7 +14,7 @@ phone:
 "+7 (999) 248-19-86",
 
 masterPhoto:
-"/master.jpg",
+"/master.JPG",
 
 links: {
 telegram:
@@ -48,15 +48,15 @@ text:"Вернусь ещё."
 ],
 
 
-gallery: [
-  "/gallery/1.jpg",
-  "/gallery/2.jpg",
-  "/gallery/3.jpg",
-  "/gallery/4.jpg",
-  "/gallery/5.jpg",
-  "/gallery/6.jpg",
-  "/gallery/7.jpg",
-  "/gallery/8.jpg",
-  "/gallery/9.jpg",
-  "/gallery/10.jpg"
+ggallery: [
+"/gallery/1.JPG",
+"/gallery/2.JPG",
+"/gallery/3.JPG",
+"/gallery/4.JPG",
+"/gallery/5.JPG",
+"/gallery/6.JPG",
+"/gallery/7.JPG",
+"/gallery/8.JPG",
+"/gallery/9.JPG",
+"/gallery/10.JPG"
 ]}
